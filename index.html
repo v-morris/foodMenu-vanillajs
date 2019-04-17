@@ -10,12 +10,15 @@
 </head>
 
 <body>
-    <div id="meal-container" class="meal-main-container">
-        <button id="breakfast" class="option" value="breakfast" onclick="setMeal('breakfast')">Breakfast</button>
-        <button id="lunch" class="option" value="lunch" onclick="setMeal('lunch')">Lunch</button>
-        <button id="dinner" class="option" value="dinner" onclick="setMeal('dinner')">Dinner</button>
-        <button id="appetizers" class="option" value="appetizers" onclick="setMeal('appetizers')">Appetizers</button>
+    <div id="container" class="container">
+        <div id="meal-container" class="meal-container"> 
+            <button id="breakfast" class="option-meal" value="breakfast">Breakfast</button>
+            <button id="lunch" class="option-meal" value="lunch">Lunch</button>
+            <button id="dinner" class="option-meal" value="dinner">Dinner</button>
+            <button id="appetizers" class="option-meal" value="appetizers">Appetizers</button>
+        </div>
     </div>
+    <ul id="order-container" class="order-main-container"></ul>
     <script src="script.js"></script>
 </body>
 
