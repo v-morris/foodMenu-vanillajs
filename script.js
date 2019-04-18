@@ -25,30 +25,30 @@ function setMeal(e) {
     console.log(meal.selectedMeal);
     if (meal.selectedMeal === "breakfast") {
         document.getElementById('meal-container').innerHTML =
-            `<div id="breakfast-container" class="meal-container"> 
-            <button id="breakfastBurrito" class="option">Breakfast Burrito</button> 
-            <button id="scrambledEggs" class="option">Scrambled Eggs</button>
-            <button class="back" onclick="toMeals()">Back to Meals</button></div>`
+            `
+            <button id="breakfastBurrito" type="button" class="btn btn-variant option">Breakfast Burrito</button> 
+            <button id="scrambledEggs" type="button" class="btn btn-variant option">Scrambled Eggs</button>
+            <button class="btn btn-back back" onclick="toMeals()">Back to Meals</button>`
 
     } else if (meal.selectedMeal === "lunch") {
         document.getElementById('meal-container').innerHTML =
-            `<div id="lunch-container" class="meal-container">
-            <button id="chickenStrips" class="option">Chicken Strips</button>
-            <button id="pasta" class="option">Pasta</button>
-            <button class="back" onclick="toMeals()">Back to Meals</button></div>`
+            `
+            <button id="chickenStrips" type="button" class="btn btn-variant option">Chicken Strips</button>
+            <button id="pasta" type="button" class="btn btn-variant option">Pasta</button>
+            <button class="btn btn-back back" onclick="toMeals()">Back to Meals</button>`
 
     } else if (meal.selectedMeal === "dinner") {
         document.getElementById('meal-container').innerHTML =
-            `<div id="dinner-container" class="meal-container">
-        <button id="roastBeef" class="option">Roast Beef</button>
-        <button id="nyStrip" class="option">NY Strip</button>
-        <button class="back" onclick="toMeals()">Back to Meals</button></div>`
+            `
+        <button id="roastBeef" type="button" class="btn btn-variant option">Roast Beef</button>
+        <button id="nyStrip" type="button" class="btn btn-variant option">NY Strip</button>
+        <button class="btn btn-back back" onclick="toMeals()">Back to Meals</button>`
     } else if (meal.selectedMeal === "appetizers") {
         document.getElementById('meal-container').innerHTML =
-            `<div id="appetizers-container" class="meal-container">
-        <button id="mozzarellaSticks" class="option">Mozzarella Sticks</button>
-        <button id="friedZuchinni" class="option">Fried Zuchinni</button>
-        <button class="back" onclick="toMeals()">Back to Meals</button></div>`
+            `
+        <button id="mozzarellaSticks" type="button" class="btn btn-variant option">Mozzarella Sticks</button>
+        <button id="friedZuchinni" type="button" class="btn btn-variant option">Fried Zuchinni</button>
+        <button class="btn btn-back back" onclick="toMeals()">Back to Meals</button>`
     }
     let addItem = document.getElementsByClassName("option");
     for (var i = 0; i < addItem.length; i++) {
@@ -70,7 +70,7 @@ function itemCount() {
         var itemCount = counts[item];
         ul = document.getElementById('order-container');
         itemList = itemList + ' ' + (`<li>${item} : ${itemCount}</li>`);
-        ul.innerHTML = itemList;
+        ul.innerHTML = `<h2>Order</h2>` + itemList;
     }
     console.log("count", counts);
 }
@@ -82,10 +82,10 @@ function addToOrder(e) {
 
 function toMeals() {
     document.getElementById('meal-container').innerHTML =
-        `<button id="breakfast" class="option-meal" value="breakfast">Breakfast</button>
-        <button id="lunch" class="option-meal" value="lunch">Lunch</button>
-        <button id="dinner" class="option-meal" value="dinner">Dinner</button>
-        <button id="appetizers" class="option-meal" value="appetizers">Appetizers</button>`
+        `<button id="breakfast" type="button" class="btn btn-variant option-meal" value="breakfast">Breakfast</button>
+        <button id="lunch" type="button" class="btn btn-variant option-meal" value="lunch">Lunch</button>
+        <button id="dinner" type="button" class="btn btn-variant option-meal" value="dinner">Dinner</button>
+        <button id="appetizers" type="button" class="btn btn-variant option-meal" value="appetizers">Appetizers</button>`
     for (let item of mealSelector) {
         item.addEventListener("click", setMeal);
     }

@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Food Menu</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="container" class="container">
+    <div id="container" class="main-container">
         <div id="meal-container" class="meal-container">
-            <button id="breakfast" class="option-meal" value="breakfast">Breakfast</button>
-            <button id="lunch" class="option-meal" value="lunch">Lunch</button>
-            <button id="dinner" class="option-meal" value="dinner">Dinner</button>
-            <button id="appetizers" class="option-meal" value="appetizers">Appetizers</button>
+            <button id="breakfast" type="button" class="btn btn-variant option-meal" value="breakfast">Breakfast</button>
+            <button id="lunch" type="button" class="btn btn-variant option-meal" value="lunch">Lunch</button>
+            <button id="dinner" type="button" class="btn btn-variant option-meal" value="dinner">Dinner</button>
+            <button id="appetizers" type="button" class="btn btn-variant option-meal" value="appetizers">Appetizers</button>
         </div>
 
-        <ul id="order-container" class="order-main-container"></ul>
+        <ul id="order-container" class="order-container"><h2>Order</h2></ul>
     </div>
     <script src="script.js"></script>
 </body>

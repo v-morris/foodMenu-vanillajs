@@ -1,0 +1,165 @@
+
+    body,html {
+        margin: 0;
+    height: 100vh;
+        padding: 0;
+        background-color:#E4DFD6;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+.main-container{
+    background-color:#E4DFD6;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.meal-container{
+    width:60%;
+    height:50%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.order-container{
+border-left: 5px solid #424041;
+padding: 0;
+margin: 0;
+width:40%;
+height: 100vh;
+display:flex;
+align-items: center;
+flex-direction: column;
+}
+
+.option-meal, .back, .option{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    outline:none !important;
+}
+
+li{
+    list-style:none;
+}
+
+.btn.active.focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, 
+.btn:active:focus, .btn:focus {
+      outline: none !important;
+      box-shadow: none !important;
+}
+
+.btn-variant { 
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    color: #424041 !important; 
+    background-color: #B27C6B !important; 
+    border-color: #424041 !important; 
+    border-width: 2px !important;
+    outline: none !important;
+  }
+
+   /* BUTTON VARIANT PRIMARY */
+
+  .btn-variant:hover, 
+  .open .dropdown-toggle.btn-variant { 
+    color: #424041 !important; 
+    background-color: #88ACB2 !important; 
+    border-color: #424041 !important; 
+    outline: none !important;
+  } 
+
+  .btn-variant:focus, 
+  .btn-variant:active{
+      outline: none !important;
+  }
+   
+  .btn-variant:active, 
+  .btn-variant.active, 
+  .open .dropdown-toggle.btn-variant { 
+    background-image: none; 
+    outline: none !important;
+  } 
+   
+  .btn-variant.disabled, 
+  .btn-variant[disabled], 
+  fieldset[disabled] .btn-variant, 
+  .btn-variant.disabled:hover, 
+  .btn-variant[disabled]:hover, 
+  fieldset[disabled] .btn-variant:hover, 
+  .btn-variant.disabled:focus, 
+  .btn-variant[disabled]:focus, 
+  fieldset[disabled] .btn-variant:focus, 
+  .btn-variant.disabled:active, 
+  .btn-variant[disabled]:active, 
+  fieldset[disabled] .btn-variant:active, 
+  .btn-variant.disabled.active, 
+  .btn-variant[disabled].active, 
+  fieldset[disabled] .btn-variant.active { 
+    background-color: #B27C6B; 
+    border-color: #88ACB2; 
+    outline: none !important;
+  } 
+   
+  .btn-variant .badge { 
+    color: #B27C6B !important; 
+    background-color: #424041 !important; 
+    outline: none !important;
+  }
+
+  /* BUTTON BACK */
+
+  .btn-back { 
+    color: #424041 !important; 
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    background-color: #DAC8B2 !important; 
+    border-color: #B27C6B !important; 
+    border-width: 2px !important;
+  } 
+   
+  .btn-back:hover, 
+  .btn-back:focus, 
+  .btn-back:active, 
+  .btn-back.active, 
+  .open .dropdown-toggle.btn-back { 
+    color: #424041 !important; 
+    background-color: #88ACB2 !important; 
+    border-color: #B27C6B !important; 
+  } 
+   
+  .btn-back:active, 
+  .btn-back.active, 
+  .open .dropdown-toggle.btn-back { 
+    background-image: none !important; 
+  } 
+   
+  .btn-back.disabled, 
+  .btn-back[disabled], 
+  fieldset[disabled] .btn-back, 
+  .btn-back.disabled:hover, 
+  .btn-back[disabled]:hover, 
+  fieldset[disabled] .btn-back:hover, 
+  .btn-back.disabled:focus, 
+  .btn-back[disabled]:focus, 
+  fieldset[disabled] .btn-back:focus, 
+  .btn-back.disabled:active, 
+  .btn-back[disabled]:active, 
+  fieldset[disabled] .btn-back:active, 
+  .btn-back.disabled.active, 
+  .btn-back[disabled].active, 
+  fieldset[disabled] .btn-back.active { 
+    background-color: #DAC8B2; 
+    border-color: #B27C6B; 
+  } 
+   
+  .btn-back .badge { 
+    color: #DAC8B2 !important; 
+    background-color: #424041 !important; 
+  }
